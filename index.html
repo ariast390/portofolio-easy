@@ -4,24 +4,111 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" rel="stylesheet" /> -->
+    <script src="https://kit.fontawesome.com/021eda2c9b.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <section id="hero-section" class="flex items-center h-screen">
-      <div class="w-1/2">
+      <div class="w-1/2 ms-4">
         <h1 class="text-4xl font-bold">Aria Sena Trimulia</h1>
       </div>
-      <div class="w-1/2 bg-primary flex items-center justify-center">
+      <div class="w-1/2 bg-primary flex items-center justify-center rounded-l-xl">
         <img src="dist/img/pasfoto2.png" alt="Foto Anda" class="w-2/3 h-auto" />
       </div>
     </section>
     <section id="tentang-saya" class="flex items-center h-screen">
-      <div class="container mx-auto flex justify-start">
+      <div class="container mx-auto flex justify-between">
         <div class="w-1/2">
+          <img src="https://picsum.photos/400/300" alt="Foto Anda" class="w-full h-auto rounded-xl" />
+        </div>
+        <div class="w-1/2 flex flex-col justify-center ms-4 text-justify">
           <h2 class="text-3xl font-bold mb-4">Tentang Saya</h2>
           <p class="text-lg">
             Saya adalah seorang pengembang web yang berfokus pada front-end development. Saya memiliki passion dalam menciptakan pengalaman pengguna yang menarik dan fungsional melalui desain yang
             responsif dan interaktif. Dengan keahlian dalam HTML, CSS, dan JavaScript, saya senang membangun website yang modern dan estetis.
           </p>
+          <div class="mt-4 flex gap-4">
+            <a href="https://www.instagram.com/username" target="_blank">
+              <i class="fab fa-instagram text-3xl"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/username" target="_blank">
+              <i class="fab fa-linkedin text-3xl"></i>
+            </a>
+
+            <a href="https://api.whatsapp.com/send?phone=phonenumber" target="_blank">
+              <i class="fab fa-whatsapp text-3xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="riwayat-pekerjaan" class="bg-gray-100 py-10">
+      <div class="p-4 mt-4">
+        <h1 class="text-4xl text-center font-semibold mb-6">Package status</h1>
+        <div class="container">
+          <div class="flex flex-col md:grid grid-cols-12 text-gray-50">
+            <div class="flex md:contents">
+              <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                <div class="h-full w-6 flex items-center justify-center">
+                  <div class="h-full w-1 bg-green-500 pointer-events-none"></div>
+                </div>
+                <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-green-500 shadow text-center">
+                  <i class="fas fa-check-circle text-white"></i>
+                </div>
+              </div>
+              <div class="bg-green-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
+                <h3 class="font-semibold text-lg mb-1">Package Booked</h3>
+                <p class="leading-tight text-justify w-full">21 July 2021, 04:30 PM</p>
+              </div>
+            </div>
+
+            <div class="flex md:contents">
+              <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                <div class="h-full w-6 flex items-center justify-center">
+                  <div class="h-full w-1 bg-green-500 pointer-events-none"></div>
+                </div>
+                <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-green-500 shadow text-center">
+                  <i class="fas fa-check-circle text-white"></i>
+                </div>
+              </div>
+              <div class="bg-green-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
+                <h3 class="font-semibold text-lg mb-1">Out for Delivery</h3>
+                <p class="leading-tight text-justify">22 July 2021, 01:00 PM</p>
+              </div>
+            </div>
+
+            <div class="flex md:contents">
+              <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                <div class="h-full w-6 flex items-center justify-center">
+                  <div class="h-full w-1 bg-red-500 pointer-events-none"></div>
+                </div>
+                <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-red-500 shadow text-center">
+                  <i class="fas fa-times-circle text-white"></i>
+                </div>
+              </div>
+              <div class="bg-red-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
+                <h3 class="font-semibold text-lg mb-1 text-gray-50">Cancelled</h3>
+                <p class="leading-tight text-justify">Customer cancelled the order</p>
+              </div>
+            </div>
+
+            <div class="flex md:contents">
+              <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                <div class="h-full w-6 flex items-center justify-center">
+                  <div class="h-full w-1 bg-gray-300 pointer-events-none"></div>
+                </div>
+                <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-gray-300 shadow text-center">
+                  <i class="fas fa-exclamation-circle text-gray-400"></i>
+                </div>
+              </div>
+              <div class="bg-gray-300 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
+                <h3 class="font-semibold text-lg mb-1 text-gray-400">Delivered</h3>
+                <p class="leading-tight text-justify"></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
