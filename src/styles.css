@@ -1,0 +1,43 @@
+.pasfoto {
+  border-radius: 0 0 20% 20%;
+  overflow: hidden;
+  display: inline-block;
+  left: 15%;
+}
+
+#hero-section {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    230deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 75%,
+    rgba(27, 156, 133, 1) 100%
+  );
+}
+
+/* animated emoji */
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  75% {
+    transform: rotate(40deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.emoji-wave {
+  display: inline-block;
+  animation: wave 2s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/* animated emooji end */
