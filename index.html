@@ -5,11 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="src/img.css" />
     <!-- <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" rel="stylesheet" /> -->
     <script src="https://kit.fontawesome.com/021eda2c9b.js" crossorigin="anonymous"></script>
   </head>
-  <body>
-    <section id="hero-section" class="flex items-center h-screen">
+  <body class="scroll-smooth">
+    <!-- navbar -->
+    <!-- <nav class="bg-gray-700 fixed w-3/4 z-50 mt-2 rounded-xl left-1/2 transform -translate-x-1/2"> -->
+    <nav class="bg-gray-700 fixed w-full z-50">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center">
+            <a href="#hero-section">
+              <img src="dist/img/navbar-icon.png" alt="aria portfolio" class="w-3/4"
+            /></a>
+            <a class="text-white text-xl font-bold" href="#hero-section">aria Portfolio</a>
+          </div>
+          <div class="flex gap-5 pr-10">
+            <a
+              class="text-gray-300 hover:text-white px-3 py-2 rounded-md relative"
+              href="#hero-section"
+            >
+              <i class="fa-solid fa-house fa-xl"></i>
+              <span
+                class="absolute left-1/2 transform -translate-x-1/2 top-full bg-gray-800 text-white px-2 py-1 mt-3 rounded-md opacity-0 transition-opacity duration-200"
+              >
+                Home
+              </span>
+            </a>
+            <a
+              class="text-gray-300 hover:text-white px-3 py-2 rounded-md relative"
+              href="#about-me"
+            >
+              <i class="fa-solid fa-user hover fa-xl"></i>
+              <span
+                class="absolute left-1/2 transform -translate-x-1/2 top-full bg-gray-800 text-white px-4 py-1 mt-3 rounded-md whitespace-nowrap text-center opacity-0 transition-opacity duration-200"
+              >
+                About Me
+              </span>
+            </a>
+            <a
+              class="text-gray-300 hover:text-white px-3 py-2 rounded-md relative"
+              href="#timeline-section"
+            >
+              <i class="fa-solid fa-compass fa-xl"></i>
+              <span
+                class="absolute left-1/2 transform -translate-x-1/2 top-full bg-gray-800 text-white px-4 py-1 mt-3 rounded-md whitespace-nowrap text-center opacity-0 transition-opacity duration-200"
+              >
+                My Journey
+              </span>
+            </a>
+            <a class="text-gray-300 hover:text-white px-3 py-2 rounded-md relative" href="#blogs">
+              <i class="fa-solid fa-briefcase fa-xl"></i>
+              <span
+                class="absolute left-1/2 transform -translate-x-1/2 top-full bg-gray-800 text-white px-4 py-1 mt-3 rounded-md whitespace-nowrap text-center opacity-0 transition-opacity duration-200"
+              >
+                My Project
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+    <section id="hero-section" class="flex items-center h-screen pt-16">
       <div class="w-1/2 ps-8">
         <p class="text-xl font-semibold">Welcome <span class="emoji-wave">👋</span> To</p>
         <h1 class="text-8xl font-bold">Aria Sena Portfolio's</h1>
@@ -22,7 +81,7 @@
       </div>
     </section>
 
-    <section id="tentang-saya" class="flex items-center h-screen my-5">
+    <section id="about-me" class="flex items-center h-screen my-5">
       <div class="container mx-auto flex justify-between">
         <div class="w-1/2 relative -mt-36">
           <img
@@ -63,172 +122,166 @@
       </div>
     </section>
 
-    <section id="riwayat-pekerjaan" class="bg-gray-100 py-10">
-      <div class="p-4 mt-4">
-        <h1 class="text-4xl text-center font-semibold mb-6">My Journey</h1>
-        <div class="container">
-          <div class="flex flex-col md:grid grid-cols-12 text-white">
-            <div class="flex md:contents">
-              <div class="col-start-3 col-end-4 mr-10 md:mx-auto relative">
-                <div class="h-full w-6 flex items-center justify-center">
-                  <div class="h-full w-1 bg-primary pointer-events-none"></div>
-                </div>
-                <div
-                  class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-third shadow text-center"
-                >
-                  <i class="fas fa-check-circle text-white"></i>
-                </div>
+    <section id="timeline-section" class="py-3">
+      <h1 class="text-4xl text-center font-semibold mb-6">My Journey</h1>
+      <div class="container">
+        <div class="flex flex-col md:grid grid-cols-12 text-white">
+          <div class="flex md:contents">
+            <div class="col-start-3 col-end-4 mr-10 md:mx-auto relative">
+              <div class="h-full w-6 flex items-center justify-center">
+                <div class="h-full w-1 bg-primary pointer-events-none"></div>
               </div>
-              <div
-                class="bg-third col-start-4 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md w-full"
-              >
-                <p class="text-xl font-bold">Software Engineer</p>
-                <div class="pb-2">
-                  <span
-                    class="inline-flex rounded-2xl bg-blue-900 px-3 py-0 text-xs font-medium text-blue-100"
-                  >
-                    Raspberry Pi
-                  </span>
-                  <span
-                    class="inline-flex rounded-2xl bg-blue-900 px-3 py-0 text-xs font-medium text-blue-100"
-                  >
-                    Firebase
-                  </span>
-                  <span
-                    class="inline-flex rounded-2xl bg-blue-900 px-3 py-0 text-xs font-medium text-blue-100"
-                  >
-                    Arduino
-                  </span>
-                  <span
-                    class="inline-flex rounded-2xl bg-blue-900 px-3 py-0 text-xs font-medium text-blue-100"
-                  >
-                    Python
-                  </span>
-                  <span
-                    class="inline-flex rounded-2xl bg-blue-900 px-3 py-0 text-xs font-medium text-blue-100"
-                  >
-                    HTML
-                  </span>
+              <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-third shadow text-center">
+                <i class="fas fa-check-circle text-white"></i>
+              </div>
+            </div>
+            <div
+              class="bg-third col-start-4 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md w-full"
+            >
+              <p class="text-xl font-bold">Software Engineer</p>
+              <div class="pb-2">
+                <span
+                  class="inline-flex rounded-2xl bg-blue-900 px-3 py-0 text-xs font-medium text-blue-100"
+                >
+                  Raspberry Pi
+                </span>
+                <span
+                  class="inline-flex rounded-2xl bg-blue-900 px-3 py-0 text-xs font-medium text-blue-100"
+                >
+                  Firebase
+                </span>
+                <span
+                  class="inline-flex rounded-2xl bg-blue-900 px-3 py-0 text-xs font-medium text-blue-100"
+                >
+                  Arduino
+                </span>
+                <span
+                  class="inline-flex rounded-2xl bg-blue-900 px-3 py-0 text-xs font-medium text-blue-100"
+                >
+                  Python
+                </span>
+                <span
+                  class="inline-flex rounded-2xl bg-blue-900 px-3 py-0 text-xs font-medium text-blue-100"
+                >
+                  HTML
+                </span>
+              </div>
+              <div class="grid grid-rows-1 grid-flow-col gap-4">
+                <div class="row-span-3">
+                  <p class="text-xl font-semibold">PT LAPI ITB</p>
+                  <p class="text-xs">Agu - Dec 2022</p>
                 </div>
-                <div class="grid grid-rows-1 grid-flow-col gap-4">
-                  <div class="row-span-3">
-                    <p class="text-xl font-semibold">PT LAPI ITB</p>
-                    <p class="text-xs">Agu - Dec 2022</p>
+                <div class="col-span-2 text-justify">
+                  The project "Pengembangan Laptop Merah Putih" served as the basis for the
+                  internship. I am a part of the software engineer team, which is separated into 3
+                  divisions. gain knowledge about "semiconductor literacy" directly from Intel. My
+                  role on the team is to test the Raspberry PI's unique PCB board, which was created
+                  by the hardware engineer team.
+                  <div class="w-1/2 justify-center items-center mx-auto my-3">
+                    <!-- <img
+                      src="https://picsum.photos/300/100"
+                      alt="Foto Anda"
+                      class="w-full h-auto rounded-xl"
+                    /> -->
                   </div>
-                  <div class="col-span-2 text-justify">
-                    The project "Pengembangan Laptop Merah Putih" served as the basis for the
-                    internship. I am a part of the software engineer team, which is separated into 3
-                    divisions. gain knowledge about "semiconductor literacy" directly from Intel. My
-                    role on the team is to test the Raspberry PI's unique PCB board, which was
-                    created by the hardware engineer team.
-                    <div class="w-1/2 justify-center items-center mx-auto my-3">
-                      <img
-                        src="https://picsum.photos/300/100"
-                        alt="Foto Anda"
-                        class="w-full h-auto rounded-xl"
-                      />
-                    </div>
-                    <ul class="list-disc mx-6 my-3">
-                      <li>Hardware Testing (IC troubleshooting, peripheral/port testing)</li>
-                      <li>Software testing (OS testing, troubleshooting)</li>
-                      <li>Making dummy website IOT dashboards with firebase</li>
-                    </ul>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, nostrum
-                      suscipit sint totam quibusdam unde est cumque eaque distinctio expedita!
-                    </p>
-                  </div>
+                  <ul class="list-disc mx-6 my-3">
+                    <li>Hardware Testing (IC troubleshooting, peripheral/port testing)</li>
+                    <li>Software testing (OS testing, troubleshooting)</li>
+                    <li>Making dummy website IOT dashboards with firebase</li>
+                  </ul>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, nostrum
+                    suscipit sint totam quibusdam unde est cumque eaque distinctio expedita!
+                  </p>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="flex md:contents">
-              <div class="col-start-3 col-end-4 mr-10 md:mx-auto relative">
-                <div class="h-full w-6 flex items-center justify-center">
-                  <div class="h-full w-1 bg-primary pointer-events-none rounded-t-lg"></div>
-                </div>
-                <div
-                  class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-third shadow text-center"
-                >
-                  <i class="fas fa-check-circle text-white"></i>
-                </div>
+          <div class="flex md:contents">
+            <div class="col-start-3 col-end-4 mr-10 md:mx-auto relative">
+              <div class="h-full w-6 flex items-center justify-center">
+                <div class="h-full w-1 bg-primary pointer-events-none rounded-t-lg"></div>
               </div>
-              <div
-                class="bg-third col-start-4 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md w-full"
-              >
-                <p class="text-xl font-bold">frontend Engineer</p>
-                <div class="pb-2">
-                  <span
-                    class="inline-flex rounded-2xl bg-blue-900 px-3 py-0 text-xs font-medium text-blue-100"
-                  >
-                    ReactJs
-                  </span>
-                  <span
-                    class="inline-flex rounded-2xl bg-blue-900 px-3 py-0 text-xs font-medium text-blue-100"
-                  >
-                    TypeScript
-                  </span>
-                  <span
-                    class="inline-flex rounded-2xl bg-blue-900 px-3 py-0 text-xs font-medium text-blue-100"
-                  >
-                    Html
-                  </span>
-                  <span
-                    class="inline-flex rounded-2xl bg-blue-900 px-3 py-0 text-xs font-medium text-blue-100"
-                  >
-                    CSS
-                  </span>
-                  <span
-                    class="inline-flex rounded-2xl bg-blue-900 px-3 py-0 text-xs font-medium text-blue-100"
-                  >
-                    JavaScript
-                  </span>
+              <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-third shadow text-center">
+                <i class="fas fa-check-circle text-white"></i>
+              </div>
+            </div>
+            <div
+              class="bg-third col-start-4 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md w-full"
+            >
+              <p class="text-xl font-bold">frontend Engineer</p>
+              <div class="pb-2">
+                <span
+                  class="inline-flex rounded-2xl bg-blue-900 px-3 py-0 text-xs font-medium text-blue-100"
+                >
+                  ReactJs
+                </span>
+                <span
+                  class="inline-flex rounded-2xl bg-blue-900 px-3 py-0 text-xs font-medium text-blue-100"
+                >
+                  TypeScript
+                </span>
+                <span
+                  class="inline-flex rounded-2xl bg-blue-900 px-3 py-0 text-xs font-medium text-blue-100"
+                >
+                  Html
+                </span>
+                <span
+                  class="inline-flex rounded-2xl bg-blue-900 px-3 py-0 text-xs font-medium text-blue-100"
+                >
+                  CSS
+                </span>
+                <span
+                  class="inline-flex rounded-2xl bg-blue-900 px-3 py-0 text-xs font-medium text-blue-100"
+                >
+                  JavaScript
+                </span>
+              </div>
+              <div class="grid grid-rows-1 grid-flow-col gap-4">
+                <div class="row-span-3">
+                  <p class="text-xl font-semibold">YABB</p>
+                  <p></p>
+                  <p class="text-xs">Feb - Agu 2022</p>
                 </div>
-                <div class="grid grid-rows-1 grid-flow-col gap-4">
-                  <div class="row-span-3">
-                    <p class="text-xl font-semibold">YABB</p>
-                    <p></p>
-                    <p class="text-xs">Feb - Agu 2022</p>
-                  </div>
-                  <div class="col-span-2 text-justify">
-                    The Ministry of Education and Culture presents a collaboration with YABB from
-                    GOTO, offering a specialized bootcamp program focused on Frontend training. This
-                    intensive program spans a semester and provides comprehensive instruction in
-                    ReactJs and various other aspects of Frontend development.
-                    <div class="w-1/2 justify-center items-center mx-auto my-3">
-                      <!-- <img
+                <div class="col-span-2 text-justify">
+                  The Ministry of Education and Culture presents a collaboration with YABB from
+                  GOTO, offering a specialized bootcamp program focused on Frontend training. This
+                  intensive program spans a semester and provides comprehensive instruction in
+                  ReactJs and various other aspects of Frontend development.
+                  <div class="w-1/2 justify-center items-center mx-auto my-3">
+                    <!-- <img
                         src="https://picsum.photos/300/100"
                         alt="Foto Anda"
                         class="w-full h-auto rounded-xl"
                       /> -->
-                    </div>
-                    <ul class="list-disc mx-6 my-3">
-                      <li>Technical Skills, Softskills</li>
-                      <li>Career Readiness</li>
-                      <li>Capstone Project</li>
-                    </ul>
                   </div>
+                  <ul class="list-disc mx-6 my-3">
+                    <li>Technical Skills, Softskills</li>
+                    <li>Career Readiness</li>
+                    <li>Capstone Project</li>
+                  </ul>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="flex md:contents">
-              <div class="col-start-3 col-end-4 mr-10 md:mx-auto relative">
-                <div class="h-full w-6 flex items-center justify-center">
-                  <div class="h-full w-1 bg-gray-300 pointer-events-none"></div>
-                </div>
-                <div
-                  class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-gray-300 shadow text-center"
-                >
-                  <i class="fas fa-exclamation-circle text-gray-400"></i>
-                </div>
+          <div class="flex md:contents">
+            <div class="col-start-3 col-end-4 mr-10 md:mx-auto relative">
+              <div class="h-full w-6 flex items-center justify-center">
+                <div class="h-full w-1 bg-gray-300 pointer-events-none"></div>
               </div>
               <div
-                class="bg-gray-300 col-start-4 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md w-full"
+                class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-gray-300 shadow text-center"
               >
-                <h3 class="font-semibold text-lg mb-1 text-gray-400">stay Learning</h3>
-                <p class="leading-tight text-justify"></p>
+                <i class="fas fa-exclamation-circle text-gray-400"></i>
               </div>
+            </div>
+            <div
+              class="bg-gray-300 col-start-4 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md w-full"
+            >
+              <h3 class="font-semibold text-lg mb-1 text-gray-400">stay Learning</h3>
+              <p class="leading-tight text-justify"></p>
             </div>
           </div>
         </div>
@@ -236,7 +289,7 @@
     </section>
 
     <!-- section myproject  -->
-    <section class="my-12 py-3 bg-gray-200 shadow-lg">
+    <section id="blogs" class="my-12 py-3 bg-gray-200 shadow-lg pt-20">
       <div class="container mx-auto pb-10">
         <h1 class="text-4xl text-center font-semibold mb-6">My Projects</h1>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -303,5 +356,94 @@
       </div>
     </section>
     <!-- section myproject end -->
+
+    <!-- hubungi saya  -->
+    <section id="hubungi-saya" class="py-10 px-5 bg-gray-100">
+      <div class="flex justify-center items-center pb-10">
+        <h2 class="text-3xl font-bold">Hubungi Saya</h2>
+      </div>
+
+      <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="flex items-center">
+          <img src="dist/img/firmware-animate.svg" alt="" class="w-3/4" />
+        </div>
+        <div>
+          <form action="https://formsubmit.co/15b496d236e7e575751bde2089f7432c" method="POST">
+            <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5501/" /> -->
+            <input type="hidden" name="_captcha" value="false" />
+
+            <div class="mb-4">
+              <label for="nama" class="block text-gray-800 font-semibold mb-2">Nama</label>
+              <input
+                type="text"
+                id="nama"
+                name="nama"
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block text-gray-800 font-semibold mb-2">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <label for="pesan" class="block text-gray-800 font-semibold mb-2">Pesan</label>
+              <textarea
+                id="pesan"
+                name="pesan"
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
+                required
+              ></textarea>
+            </div>
+            <button
+              id="openModal"
+              class="bg-indigo-500 text-white px-4 py-2 rounded-md hover:bg-indigo-600"
+            >
+              Kirim Pesan
+            </button>
+          </form>
+          <!-- <div
+            id="modal"
+            class="fixed inset-0 z-50 flex items-center justify-center bg-gray-900 bg-opacity-50 hidden"
+          >
+            <div class="bg-white p-8 rounded-md">
+              <h2 class="text-2xl font-bold mb-4">Terima Kasih!</h2>
+              <p>Terima kasih sudah menghubungi kami. Pesan Anda telah berhasil dikirim.</p>
+              <button
+                id="closeModal"
+                class="bg-indigo-500 text-white px-4 py-2 rounded-md mt-4 hover:bg-indigo-600"
+              >
+                Tutup
+              </button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <!-- hubungi saya end -->
+
+    <!-- footer -->
+    <footer class="bg-gray-900 text-white py-4 px-4">
+      <div class="container mx-auto flex items-center justify-between">
+        <div>
+          <img src="dist/img/navbar-icon.png" alt="Aria's Icon" />
+          <h3 class="text-xl font-semibold mb-4">Informasi Kontak</h3>
+          <p class="text-gray-300"><i class="fa-solid fa-envelope"></i> ariast390@gmail.com</p>
+          <p class="text-gray-300"><i class="fa-solid fa-phone"></i> (+62) 85730037568</p>
+          <p class="text-gray-300"><i class="fa-solid fa-map-marker-alt"></i> Malang, Indonesia</p>
+        </div>
+      </div>
+      <div class="flex justify-center items-center">
+        <p class="text-sm whitespace-nowrap">&copy; Dibuat Oleh Aria dengan Tailwind CSS</p>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <script src="dist/script.js"></script>
   </body>
 </html>

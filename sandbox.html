@@ -1,0 +1,188 @@
+<!-- timeline bagus -->
+<div class="p-4 mx-28 rounded-3xl bg-[#E8F6EF]">
+  <!-- percobaan -->
+  <!-- component -->
+  <div class="w-10/12 md:w-7/12 lg:w-2/5 mx-auto relative py-20">
+    <h1 class="text-3xl text-center font-bold text-blue-500 mb-4">My Journey</h1>
+
+    <div class="flex justify-between space-x-4 mb-4">
+      <button
+        id="workButton"
+        class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full active:bg-green-700"
+      >
+        <i class="fa-solid fa-briefcase"></i>
+        Work
+      </button>
+
+      <button
+        id="schoolButton"
+        class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-full"
+      >
+        <i class="fa-solid fa-graduation-cap"></i>
+        School
+      </button>
+    </div>
+
+    <div class="border-l-2 mt-10">
+      <!-- Card 1 -->
+      <!-- Timeline Pekerjaan -->
+      <div
+        id="workCard1"
+        class="work-timeline transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-blue-600 text-white rounded-3xl mb-10 flex-col md:flex-row space-y-4 md:space-y-0 hover:shadow-lg"
+      >
+        <!-- Dot Follwing the Left Vertical Line -->
+        <div
+          class="w-5 h-5 bg-blue-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"
+        ></div>
+        <!-- Line that connecting the box with the vertical line -->
+        <div class="w-10 h-1 bg-blue-300 absolute -left-10 z-0"></div>
+        <!-- Content that showing in the box -->
+        <div class="flex-auto">
+          <h1 class="text-base">PT LAPI ITB</h1>
+          <h1 class="text-2xl font-bold">Software Engineer</h1>
+          <div class="text-xs font-semibold">Agu - Dec 2022</div>
+        </div>
+        <div class="text-base pr-1">
+          Read more
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+
+      <!-- modal workcard1 -->
+      <div
+        id="modal"
+        class="fixed top-0 left-0 w-screen h-screen bg-gray-900 bg-opacity-50 flex items-center justify-center hidden z-50"
+      >
+        <div class="bg-white rounded-lg shadow-lg p-8 max-w-lg mx-auto">
+          <h1 class="text-2xl font-bold mb-4">Modal Box</h1>
+          <p class="text-justify">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius similique sunt autem
+            aliquam libero excepturi minima eos veniam perspiciatis at quae assumenda laudantium
+            ullam saepe quia esse expedita aspernatur tempore architecto magnam porro cum, inventore
+            culpa. Consectetur, minima. Nulla consequatur dolore temporibus vero quasi vitae
+            mollitia sunt excepturi reprehenderit, dicta cupiditate adipisci exercitationem.
+            Dolorum, qui id. Asperiores quidem dolore quisquam ab ex qui reprehenderit minus facilis
+            earum iste perspiciatis cupiditate similique nulla dolor veritatis velit, id cumque vel
+            repudiandae molestiae ut mollitia reiciendis modi voluptatem. Sunt enim rerum neque
+            impedit accusamus, quod aut perspiciatis quisquam cumque atque, autem laudantium
+            provident!
+          </p>
+          <button id="modalCloseButton" class="px-4 py-2 bg-blue-600 text-white rounded-lg mt-4">
+            Close
+          </button>
+        </div>
+      </div>
+      <!-- modal workcard1 end -->
+
+      <!-- timeline work2 -->
+      <div
+        id="workCard2"
+        class="work-timeline transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-blue-600 text-white rounded-3xl mb-10 flex-col md:flex-row space-y-4 md:space-y-0 hover:shadow-lg"
+      >
+        <!-- Dot Following the Left Vertical Line -->
+        <div
+          class="w-5 h-5 bg-blue-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"
+        ></div>
+        <!-- Line that connects the box with the vertical line -->
+        <div class="w-10 h-1 bg-blue-300 absolute -left-10 z-0"></div>
+        <!-- Content shown in the box -->
+        <div class="flex-auto">
+          <h1 class="text-base">Company Name</h1>
+          <h1 class="text-2xl font-bold">Job Position</h1>
+          <div class="text-xs font-semibold">Date Range</div>
+        </div>
+        <div class="text-base pr-1">
+          Read more
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+
+      <!-- Modal for workCard2 -->
+      <div
+        id="modal2"
+        class="fixed top-0 left-0 w-screen h-screen bg-gray-900 bg-opacity-50 flex items-center justify-center hidden z-50"
+      >
+        <div class="bg-white rounded-lg shadow-lg p-8 max-w-lg mx-auto">
+          <h1 class="text-2xl font-bold mb-4">Modal Box2</h1>
+          <p class="text-justify">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius similique sunt autem
+            aliquam libero excepturi minima eos veniam perspiciatis at quae assumenda laudantium
+            ullam saepe quia esse expedita aspernatur tempore architecto magnam porro cum, inventore
+            culpa. Consectetur, minima. Nulla consequatur dolore temporibus vero quasi vitae
+            mollitia sunt excepturi reprehenderit, dicta cupiditate adipisci exercitationem.
+            Dolorum, qui id. Asperiores quidem dolore quisquam ab ex qui reprehenderit minus facilis
+            earum iste perspiciatis cupiditate similique nulla dolor veritatis velit, id cumque vel
+            repudiandae molestiae ut mollitia reiciendis modi voluptatem. Sunt enim rerum neque
+            impedit accusamus, quod aut perspiciatis quisquam cumque atque, autem laudantium
+            provident!
+          </p>
+          <button id="modalCloseButton2" class="px-4 py-2 bg-blue-600 text-white rounded-lg mt-4">
+            Close
+          </button>
+        </div>
+      </div>
+
+      <!-- workcard comingsoon -->
+      <div
+        id="workCard10"
+        class="work-timeline ml-10 relative flex items-center px-6 py-4 bg-blue-100 text-gray-400 rounded-3xl mb-10 flex-col md:flex-row space-y-4 md:space-y-0"
+      >
+        <!-- Dot Following the Left Vertical Line -->
+        <div
+          class="w-5 h-5 bg-blue-200 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 mt-2 md:mt-0"
+        ></div>
+        <!-- Line that connects the box with the vertical line -->
+        <div class="w-10 h-1 bg-blue-100 absolute -left-10 z-0"></div>
+        <!-- Content shown in the box -->
+        <div class="flex-auto text-lg font-bold">Stay Learning</div>
+        <div class="w-5 h-5 bg-slate-300 rounded-full flex items-center justify-center">
+          <i class="fa-solid fa-exclamation"></i>
+        </div>
+      </div>
+      <!-- workcard comingsoon end -->
+      <!-- modal workcard2 end -->
+      <!-- timeline work2 end -->
+
+      <!-- Timeline School -->
+      <div
+        id="schoolCard1"
+        class="school-timeline transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-yellow-600 text-white rounded-3xl mb-10 flex-col md:flex-row"
+      >
+        <!-- Dot Follwing the Left Vertical Line -->
+        <div
+          class="w-5 h-5 bg-yellow-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 -mt-2 md:mt-0"
+        ></div>
+        <!-- Line that connecting the box with the vertical line -->
+        <div class="w-10 h-1 bg-yellow-300 absolute -left-10 z-0"></div>
+        <!-- Content that showing in the box -->
+        <div class="flex-auto">
+          <h1 class="text-lg">Day 1</h1>
+          <h1 class="text-xl font-bold">Orientation and Briefing on Uniliver basics</h1>
+          <h3>Classroom</h3>
+        </div>
+        <a href="#" class="text-center text-white hover:text-gray-300">Download materials</a>
+      </div>
+
+      <div
+        id="schoolCard2"
+        class="school-timeline transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-yellow-600 text-white rounded-3xl mb-10 flex-col md:flex-row"
+      >
+        <!-- Dot Follwing the Left Vertical Line -->
+        <div
+          class="w-5 h-5 bg-yellow-600 absolute -left-10 transform -translate-x-2/4 rounded-full z-10 -mt-2 md:mt-0"
+        ></div>
+        <!-- Line that connecting the box with the vertical line -->
+        <div class="w-10 h-1 bg-yellow-300 absolute -left-10 z-0"></div>
+        <!-- Content that showing in the box -->
+        <div class="flex-auto">
+          <h1 class="text-lg">Day 1</h1>
+          <h1 class="text-xl font-bold">Orientation and Briefing on Uniliver basics</h1>
+          <h3>Classroom</h3>
+        </div>
+        <a href="#" class="text-center text-white hover:text-gray-300">Download materials</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- percobaan end -->
+<!-- timeline bagus end -->
